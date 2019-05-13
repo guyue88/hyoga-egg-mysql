@@ -1,0 +1,61 @@
+{
+  "name": "@hyoga/egg-mysql",
+  "version": "1.0.0",
+  "description": "EGGJS框架MYSQL库",
+  "eggPlugin": {
+    "name": "mysql"
+  },
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin",
+    "egg-mysql",
+    "@hyoga/egg-mysql"
+  ],
+  "dependencies": {
+    "@hyoga/mysql": "^1.0.2",
+    "egg": "^2.22.2"
+  },
+  "devDependencies": {
+    "autod": "^3.1.0",
+    "autod-egg": "^1.1.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "egg": "^2.22.2",
+    "egg-bin": "^4.13.0",
+    "egg-ci": "^1.12.0",
+    "eslint": "^5.16.0",
+    "eslint-config-egg": "^7.4.1"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
+    "pkgfiles": "egg-bin pkgfiles",
+    "autod": "autod"
+  },
+  "files": [
+    "app.js",
+    "agent.js",
+    "config",
+    "app"
+  ],
+  "ci": {
+    "version": "8, 10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AspenLuoQiang/hyoga-egg-mysql.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AspenLuoQiang/hyoga-egg-mysql/issues"
+  },
+  "homepage": "https://github.com/AspenLuoQiang/hyoga-egg-mysql#readme",
+  "author": "lq9328@126.com",
+  "license": "MIT"
+}
