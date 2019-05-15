@@ -13,7 +13,7 @@
     "@hyoga/egg-mysql"
   ],
   "dependencies": {
-    "@hyoga/mysql": "^1.0.2",
+    "@hyoga/mysql": "^1.0.3",
     "egg": "^2.22.2"
   },
   "devDependencies": {
@@ -22,7 +22,7 @@
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "egg": "^2.22.2",
-    "egg-bin": "^4.13.0",
+    "egg-bin": "^4.13.1",
     "egg-ci": "^1.12.0",
     "eslint": "^5.16.0",
     "eslint-config-egg": "^7.4.1"
