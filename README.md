@@ -61,7 +61,7 @@ export default class User extends Service {
     // sql = SELECT * FROM user WHERE status = 1
     return this.app.mysql.table(this.table).where({ status: 1 }).select();
   }
-} 
+}
 ```
 
 ## 配置
@@ -69,19 +69,17 @@ export default class User extends Service {
 ```js
 // {app_root}/config/config.default.js
 exports.mysql = {
-  mysql: {
-    client: {
-      host: '127.0.0.1',
-      port: '3306',
-      user: 'root',
-      password: '',
-      database: 'db',
-    },
-    // 是否加载到 app 上，默认开启
-    app: true,
-    // 是否加载到 agent 上，默认关闭
-    agent: false,
+  client: {
+    host: '127.0.0.1',
+    port: '3306',
+    user: 'root',
+    password: '',
+    database: 'db',
   },
+  // 是否加载到 app 上，默认开启
+  app: true,
+  // 是否加载到 agent 上，默认关闭
+  agent: false,
 };
 ```
 
