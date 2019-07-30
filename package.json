@@ -1,6 +1,6 @@
 {
   "name": "@hyoga/egg-mysql",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "EGGJS框架MYSQL库",
   "eggPlugin": {
     "name": "mysql"
